@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+.title{
+    color: #f2f2f2;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+.factura{
+    width: 90%;
+    margin-top: 30px;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 15px #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 3px;
+}
+input{
+    height: 30px;
+    color: #222020;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+input:focus {
+    outline: none;
+    border-bottom: 1px solid gray;
+}
+form{
+    padding:20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.col-6{
+    width: 700px;
+    margin: 0px 20px;
+}
+@media(max-width:950px){
+    .col-6{
+        width: 600px;
+    }
+}
+@media(max-width:550px){
+    .col-6{
+        width: 350px;
+    }
+}
+.data_producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px  solid #b3afaf;
+}
+
+.cod, .cant, .valor_uni{
+    width: 110px;
+}
+@media(max-width:600px){
+    .cod, .cant, .valor_uni, .prod{
+        width: 45%;
+    }
+}
+
+
+
+.prod{
+    width: 250px;
+}
+.btn-add{
+    margin: 10px 0;
+    background-color: #16A085;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-size: 18px;
+    width: 80px;
+}
+.btn-add-producto{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
