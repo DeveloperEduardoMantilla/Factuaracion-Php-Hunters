@@ -121,3 +121,15 @@ form{
 .btn-finalizar:hover{
     cursor: pointer;
 }
+.btnEliminar{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: none;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 50%;
+}
+.btnEliminar:hover{
+    cursor: pointer;
+}
