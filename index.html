@@ -14,7 +14,7 @@
             <h2>FACTURA ELECTRONICA HUNTERS</h2>
         </div>
         <div class="factura">
-            <form action="#" method="POST">
+            <form method="GET" action="index.html">
                 <div class="row">
                     <div class="col-6">  
                         <div class="titulos">
@@ -22,39 +22,35 @@
                         </div>    
                         <div class="form-group">
                             <label>N° Factura</label>
-                            <input type="number">
+                            <input type="number" name="fact_num" value="100">
                         </div>
                         <div class="form-group">
                             <label>Fecha Factura</label>
-                            <input type="date">
+                            <input type="date" name="fact_fecha" value="2023-10-05">
                         </div>
                         <div class="form-group">
                             <label>Vendedor</label>
-                            <input type="text">
-                        </div>
-                        <div class="form-group">
-                            <label>N° Factura</label>
-                            <input type="number">
+                            <input type="text" name="fact_vendedor" value="Andres Jose">
                         </div>
                         <div class="form-group">
                             <label>N° Identificación</label>
-                            <input type="number">
+                            <input type="number" name="fact_nIden" value="4567820">
                         </div>
                         <div class="form-group">
                             <label>Nombre y Apellidos</label>
-                            <input type="text">
+                            <input type="text" name="fact_dataClie" value="Eduardo Mantilla">
                         </div>
                         <div class="form-group">
-                            <label>Email</label>
-                            <input type="email">
+                            <label>Correo</label>
+                            <input type="email" name="fact_correo" value="eduardomantilla@email.com">
                         </div>
                         <div class="form-group">
                             <label>Dirección</label>
-                            <input type="text">
+                            <input type="text" name="fact_direccion" value="Lebrija Santander">
                         </div>
                         <div class="form-group">
                             <label>Teléfono de Contacto</label>
-                            <input type="number">
+                            <input type="number" name="fact_telefono" value="3164578965">
                         </div>
                     </div>
                     
@@ -62,30 +58,34 @@
                         <div class="titulos">
                             <h2>Productos</h2>
                         </div>
-                        <div class="row data_producto">
-                            <div class="form-group cod">
-                                <label>Código</label>
-                                <input type="number">
-                            </div>
-                            <div class="form-group prod">
-                                <label>Producto</label>
-                                <input type="text">
-                            </div>
-                            <div class="form-group cant">
-                                <label>Cantidad</label>
-                                <input type="number">
-                            </div>
-                            <div class="form-group valor_uni">
-                                <label>Valor Unitario</label>
-                                <input type="number">
-                            </div>
-
-                        </div>   
+                        <div class="list-productos" id="list-productos">
+                            <div class="row data_producto">
+                                <div class="form-group cod">
+                                    <label>Código</label>
+                                    <input type="number" name="prod_codigo" value="10">
+                                </div>
+                                <div class="form-group prod">
+                                    <label>Producto</label>
+                                    <input type="text" name="prod_nombre" value="Manzanas">
+                                </div>
+                                <div class="form-group cant">
+                                    <label>Cantidad</label>
+                                    <input type="number" name="prod_cantidad" value="10">
+                                </div>
+                                <div class="form-group valor_uni">
+                                    <label>Valor Unitario</label>
+                                    <input type="number" name="prod_valorUn" value="20000">
+                                </div>
+                            </div> 
+                        </div>
                         <div class="btn-add-producto">
-                            <a class="btn-add">Añadir</a>
+                            <a class="btn-add" id="btn-add">Añadir</a>
                         </div>
                     </div>
+
                 </div>
+                <button type="submit" class="btn-finalizar">Finalizar compra</button>
+
             </form>
         </div>
     </div>
