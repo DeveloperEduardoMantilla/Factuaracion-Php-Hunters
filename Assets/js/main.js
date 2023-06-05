@@ -5,7 +5,7 @@ let plantilla=`
     <div class="row data_producto">
         <div class="form-group cod">
             <label>Código</label>
-            <input type="number" name="prod_codigo[]" value="10">
+            <input type="number" name="prod_codigo[]" min="0" value="10">
         </div>
         <div class="form-group prod">
             <label>Producto</label>
@@ -13,11 +13,11 @@ let plantilla=`
         </div>
         <div class="form-group cant">
             <label>Cantidad</label>
-            <input type="number" name="prod_cantidad[]" value="10">
+            <input type="number" name="prod_cantidad[]" min="0" value="1">
         </div>
         <div class="form-group valor_uni">
             <label>Valor Unitario</label>
-            <input type="number" name="prod_valorUn[]" value="20000">
+            <input type="number" name="prod_valorUn[]" min="0" value="20000">
         </div>
         <button type="button" class="btnEliminar" onclick="eliminarProducto(this)">x</button>
     </div> 
